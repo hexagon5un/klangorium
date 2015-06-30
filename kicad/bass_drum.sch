@@ -1,0 +1,467 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:elliot
+LIBS:logic_noise_playground-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C13
+U 1 1 55475483
+P 4100 2850
+F 0 "C13" H 4100 2950 40  0000 L CNN
+F 1 "0.1uF" H 4106 2765 40  0000 L CNN
+F 2 "Discret:C1" H 4138 2700 30  0001 C CNN
+F 3 "" H 4100 2850 60  0000 C CNN
+	1    4100 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L C C14
+U 1 1 55475484
+P 5400 2850
+F 0 "C14" H 5400 2950 40  0000 L CNN
+F 1 "0.1uF" H 5406 2765 40  0000 L CNN
+F 2 "Discret:C1" H 5438 2700 30  0001 C CNN
+F 3 "" H 5400 2850 60  0000 C CNN
+	1    5400 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L POT DECAY1
+U 1 1 55475486
+P 4750 3100
+F 0 "DECAY1" H 4750 3000 50  0000 C CNN
+F 1 "100k" H 4750 3100 50  0000 C CNN
+F 2 "elliot:Potentiometer_9mm_vertical_pcb_mount" H 4750 3100 60  0001 C CNN
+F 3 "" H 4750 3100 60  0000 C CNN
+	1    4750 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 55475487
+P 4750 3500
+F 0 "#PWR04" H 4750 3500 30  0001 C CNN
+F 1 "GND" H 4750 3430 30  0001 C CNN
+F 2 "" H 4750 3500 60  0000 C CNN
+F 3 "" H 4750 3500 60  0000 C CNN
+	1    4750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 55475488
+P 4700 4450
+F 0 "#PWR05" H 4700 4450 30  0001 C CNN
+F 1 "GND" H 4700 4380 30  0001 C CNN
+F 2 "" H 4700 4450 60  0000 C CNN
+F 3 "" H 4700 4450 60  0000 C CNN
+	1    4700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4069 U4
+U 5 1 5547548B
+P 4750 4850
+F 0 "U4" H 4945 4965 60  0000 C CNN
+F 1 "4069" H 4940 4725 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 4750 4850 60  0001 C CNN
+F 3 "" H 4750 4850 60  0000 C CNN
+	5    4750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4069 U4
+U 6 1 5547548C
+P 7150 4850
+F 0 "U4" H 7345 4965 60  0000 C CNN
+F 1 "4069" H 7340 4725 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 7150 4850 60  0001 C CNN
+F 3 "" H 7150 4850 60  0000 C CNN
+	6    7150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5547548D
+P 7150 4500
+F 0 "R3" V 7230 4500 40  0000 C CNN
+F 1 "100k" V 7157 4501 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 7080 4500 30  0001 C CNN
+F 3 "" H 7150 4500 30  0000 C CNN
+	1    7150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5547548E
+P 6250 4850
+F 0 "R4" V 6330 4850 40  0000 C CNN
+F 1 "100k" V 6257 4851 40  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6180 4850 30  0001 C CNN
+F 3 "" H 6250 4850 30  0000 C CNN
+	1    6250 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L C C16
+U 1 1 5547548F
+P 7100 4150
+F 0 "C16" H 7100 4250 40  0000 L CNN
+F 1 "0.01uF" H 7106 4065 40  0000 L CNN
+F 2 "Discret:C1" H 7138 4000 30  0001 C CNN
+F 3 "" H 7100 4150 60  0000 C CNN
+	1    7100 4150
+	0    1    1    0   
+$EndComp
+Text Notes 6800 5200 0    60   ~ 0
+Lowpass Output Filter
+Text Notes 4500 2800 0    60   ~ 0
+Highpass T
+Text Notes 4550 3700 0    60   ~ 0
+Lowpass T
+Text HLabel 8850 4850 2    60   Output ~ 0
+DrumOut
+$Comp
+L 4069 U4
+U 1 1 554778CD
+P 6150 1250
+F 0 "U4" H 6345 1365 60  0000 C CNN
+F 1 "4069" H 6340 1125 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 6150 1250 60  0001 C CNN
+F 3 "" H 6150 1250 60  0000 C CNN
+	1    6150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4069 U4
+U 2 1 5547791E
+P 6150 1950
+F 0 "U4" H 6345 2065 60  0000 C CNN
+F 1 "4069" H 6340 1825 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 6150 1950 60  0001 C CNN
+F 3 "" H 6150 1950 60  0000 C CNN
+	2    6150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4069 U4
+U 3 1 5547793E
+P 8650 2200
+F 0 "U4" H 8845 2315 60  0000 C CNN
+F 1 "4069" H 8840 2075 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 8650 2200 60  0001 C CNN
+F 3 "" H 8650 2200 60  0000 C CNN
+	3    8650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4069 U4
+U 4 1 55477961
+P 8650 3150
+F 0 "U4" H 8845 3265 60  0000 C CNN
+F 1 "4069" H 8840 3025 60  0000 C CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 8650 3150 60  0001 C CNN
+F 3 "" H 8650 3150 60  0000 C CNN
+	4    8650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3350 4900 3350
+Wire Wire Line
+	4900 3350 4900 3100
+Wire Wire Line
+	4250 2850 5250 2850
+Connection ~ 4750 2850
+Wire Wire Line
+	4750 3350 4750 3500
+Wire Wire Line
+	3600 2850 3950 2850
+Wire Wire Line
+	3600 2850 3600 4850
+Wire Wire Line
+	3600 3750 4000 3750
+Wire Wire Line
+	5800 2850 5800 4850
+Wire Wire Line
+	5550 2850 5800 2850
+Wire Wire Line
+	6400 4850 6700 4850
+Wire Wire Line
+	6600 4150 6600 4850
+Wire Wire Line
+	6600 4150 6950 4150
+Connection ~ 6600 4850
+Wire Wire Line
+	6600 4500 7000 4500
+Connection ~ 6600 4500
+Wire Wire Line
+	7600 4850 8850 4850
+Wire Wire Line
+	7300 4500 7800 4500
+Wire Wire Line
+	7800 4150 7800 4850
+Connection ~ 7800 4850
+Wire Wire Line
+	7250 4150 7800 4150
+Connection ~ 7800 4500
+Wire Wire Line
+	4750 2500 4750 2850
+Wire Wire Line
+	3600 4850 4300 4850
+Connection ~ 3600 3750
+Wire Wire Line
+	5200 4850 6100 4850
+Connection ~ 5800 3750
+Connection ~ 5800 4850
+Wire Wire Line
+	5350 1250 5700 1250
+Wire Wire Line
+	5550 1250 5550 900 
+Wire Wire Line
+	6850 900  6850 1250
+Wire Wire Line
+	6600 1250 6950 1250
+Wire Wire Line
+	6600 1950 6950 1950
+Wire Wire Line
+	6800 1950 6800 1600
+Wire Wire Line
+	5550 1600 5550 1950
+Wire Wire Line
+	5400 1950 5700 1950
+Wire Wire Line
+	7800 2200 8200 2200
+Wire Wire Line
+	8200 3150 7800 3150
+Wire Wire Line
+	9100 2200 9550 2200
+Wire Wire Line
+	9100 3150 9650 3150
+Text HLabel 7800 2200 0    60   Input ~ 0
+OD_A_IN
+Text HLabel 7800 3150 0    60   Input ~ 0
+OD_B_IN
+Text HLabel 9550 2200 2    60   Output ~ 0
+OD_A_OUT
+Text HLabel 9650 3150 2    60   Output ~ 0
+OD_B_OUT
+Text HLabel 5350 1250 0    60   Input ~ 0
+Buffer_A_In
+Connection ~ 5550 1250
+Text HLabel 5400 1950 0    60   Input ~ 0
+Buffer_B_In
+Connection ~ 5550 1950
+Text HLabel 6950 1250 2    60   Output ~ 0
+Buffer_A_Out
+Connection ~ 6850 1250
+Text HLabel 6950 1950 2    60   Output ~ 0
+Buffer_B_Out
+Connection ~ 6800 1950
+$Comp
+L D D9
+U 1 1 555029A9
+P 2100 3150
+F 0 "D9" H 2100 3250 50  0000 C CNN
+F 1 "D" H 2100 3050 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 2100 3150 60  0001 C CNN
+F 3 "" H 2100 3150 60  0000 C CNN
+	1    2100 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C19
+U 1 1 555029B0
+P 1600 2800
+F 0 "C19" H 1625 2900 50  0000 L CNN
+F 1 "1uF" H 1625 2700 50  0000 L CNN
+F 2 "Discret:C1" H 1638 2650 30  0001 C CNN
+F 3 "" H 1600 2800 60  0000 C CNN
+	1    1600 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L D D8
+U 1 1 555029B7
+P 2500 2800
+F 0 "D8" H 2500 2900 50  0000 C CNN
+F 1 "D" H 2500 2700 50  0000 C CNN
+F 2 "Diodes_ThroughHole:Diode_DO-35_SOD27_Horizontal_RM10" H 2500 2800 60  0001 C CNN
+F 3 "" H 2500 2800 60  0000 C CNN
+	1    2500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2800 2350 2800
+Wire Wire Line
+	2100 3000 2100 2800
+Connection ~ 2100 2800
+$Comp
+L GND #PWR06
+U 1 1 555029C1
+P 2100 3400
+F 0 "#PWR06" H 2100 3150 50  0001 C CNN
+F 1 "GND" H 2100 3250 50  0000 C CNN
+F 2 "" H 2100 3400 60  0000 C CNN
+F 3 "" H 2100 3400 60  0000 C CNN
+	1    2100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2800 3100 2800
+Text Notes 1250 2550 0    60   ~ 0
+Gate to Pulse Converter B (Short)\n
+Text HLabel 1200 2800 0    60   Input ~ 0
+Drum_Pulse
+Wire Wire Line
+	1200 2800 1450 2800
+Wire Wire Line
+	3100 2500 4750 2500
+Wire Wire Line
+	3100 2800 3100 2500
+$Comp
+L DUAL_POT RV5
+U 1 1 555044B7
+P 4700 3900
+F 0 "RV5" H 4860 4210 50  0000 C CNN
+F 1 "DUAL_POT" H 4990 3600 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Alps-RK16-double" H 4700 3900 60  0001 C CNN
+F 3 "" H 4700 3900 60  0000 C CNN
+	1    4700 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 3600 4650 3600
+Wire Wire Line
+	4650 3600 4650 4050
+Wire Wire Line
+	4600 4050 4800 4050
+Wire Wire Line
+	4900 3600 5100 3600
+Wire Wire Line
+	5100 3600 5100 4050
+Wire Wire Line
+	5100 4050 5000 4050
+Wire Wire Line
+	5800 3750 5100 3750
+Connection ~ 5100 3750
+Wire Wire Line
+	4400 4050 4000 4050
+Wire Wire Line
+	4000 4050 4000 3750
+Connection ~ 4650 4050
+Wire Wire Line
+	4700 4450 4700 4400
+Wire Wire Line
+	4700 4100 4700 4050
+Connection ~ 4700 4050
+Wire Wire Line
+	2100 3400 2100 3300
+$Comp
+L C C33
+U 1 1 554A7743
+P 4550 4250
+F 0 "C33" H 4550 4350 40  0000 L CNN
+F 1 "0.1uF" H 4556 4165 40  0000 L CNN
+F 2 "Discret:C1" H 4588 4100 30  0001 C CNN
+F 3 "" H 4550 4250 60  0000 C CNN
+	1    4550 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C34
+U 1 1 554A785E
+P 4850 4250
+F 0 "C34" H 4850 4350 40  0000 L CNN
+F 1 "0.1uF" H 4856 4165 40  0000 L CNN
+F 2 "Discret:C1" H 4888 4100 30  0001 C CNN
+F 3 "" H 4850 4250 60  0000 C CNN
+	1    4850 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 4100 4850 4100
+Wire Wire Line
+	4550 4400 4850 4400
+Connection ~ 4700 4400
+Connection ~ 4700 4100
+$Comp
+L POT RV7
+U 1 1 5552E49B
+P 6200 900
+F 0 "RV7" H 6200 800 50  0000 C CNN
+F 1 "100k" H 6200 900 50  0000 C CNN
+F 2 "elliot:Potentiometer_9mm_vertical_pcb_mount" H 6200 900 60  0001 C CNN
+F 3 "" H 6200 900 60  0000 C CNN
+	1    6200 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 900  5950 900 
+Wire Wire Line
+	6450 900  6850 900 
+$Comp
+L POT RV8
+U 1 1 5552E5C5
+P 6150 1600
+F 0 "RV8" H 6150 1500 50  0000 C CNN
+F 1 "100k" H 6150 1600 50  0000 C CNN
+F 2 "elliot:Potentiometer_9mm_vertical_pcb_mount" H 6150 1600 60  0001 C CNN
+F 3 "" H 6150 1600 60  0000 C CNN
+	1    6150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1600 5550 1600
+Wire Wire Line
+	6800 1600 6400 1600
+Wire Wire Line
+	6200 750  6450 750 
+Wire Wire Line
+	6450 750  6450 900 
+Wire Wire Line
+	6400 1600 6400 1450
+Wire Wire Line
+	6400 1450 6150 1450
+$EndSCHEMATC

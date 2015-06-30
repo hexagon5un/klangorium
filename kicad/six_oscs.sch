@@ -1,0 +1,408 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:elliot
+LIBS:logic_noise_playground-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 40106 U3
+U 1 1 554D6FDF
+P 1500 1300
+F 0 "U3" H 1600 1450 50  0000 L CNN
+F 1 "40106" H 1550 1150 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 1500 1300 60  0001 C CNN
+F 3 "" H 1500 1300 60  0000 C CNN
+	1    1500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 554D6FE0
+P 1000 1750
+F 0 "C7" H 1000 1850 40  0000 L CNN
+F 1 "0.1uF" H 1006 1665 40  0000 L CNN
+F 2 "Discret:C1" H 1038 1600 30  0001 C CNN
+F 3 "" H 1000 1750 60  0000 C CNN
+	1    1000 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR037
+U 1 1 554D6FE1
+P 1000 2050
+F 0 "#PWR037" H 1000 2050 30  0001 C CNN
+F 1 "GND" H 1000 1980 30  0001 C CNN
+F 2 "" H 1000 2050 60  0000 C CNN
+F 3 "" H 1000 2050 60  0000 C CNN
+	1    1000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1900 1000 2050
+Wire Wire Line
+	1000 900  1000 1600
+Wire Wire Line
+	1000 900  1250 900 
+Connection ~ 1000 1300
+Wire Wire Line
+	1550 900  2150 900 
+Wire Wire Line
+	2150 900  2150 1300
+Connection ~ 2150 1300
+Wire Wire Line
+	2000 1300 2650 1300
+$Comp
+L 40106 U3
+U 2 1 554D6FE2
+P 1500 2650
+F 0 "U3" H 1600 2800 50  0000 L CNN
+F 1 "40106" H 1550 2500 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 1500 2650 60  0001 C CNN
+F 3 "" H 1500 2650 60  0000 C CNN
+	2    1500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 554D6FE3
+P 1000 3100
+F 0 "C8" H 1000 3200 40  0000 L CNN
+F 1 "0.1uF" H 1006 3015 40  0000 L CNN
+F 2 "Discret:C1" H 1038 2950 30  0001 C CNN
+F 3 "" H 1000 3100 60  0000 C CNN
+	1    1000 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 554D6FE4
+P 1000 3400
+F 0 "#PWR038" H 1000 3400 30  0001 C CNN
+F 1 "GND" H 1000 3330 30  0001 C CNN
+F 2 "" H 1000 3400 60  0000 C CNN
+F 3 "" H 1000 3400 60  0000 C CNN
+	1    1000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3250 1000 3400
+Wire Wire Line
+	1000 2250 1000 2950
+Wire Wire Line
+	1000 2250 1250 2250
+Connection ~ 1000 2650
+Wire Wire Line
+	1550 2250 2150 2250
+Wire Wire Line
+	2150 2250 2150 2650
+Connection ~ 2150 2650
+Wire Wire Line
+	2000 2650 2650 2650
+$Comp
+L 40106 U3
+U 3 1 554D6FE7
+P 2550 3450
+F 0 "U3" H 2650 3600 50  0000 L CNN
+F 1 "40106" H 2600 3300 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 2550 3450 60  0001 C CNN
+F 3 "" H 2550 3450 60  0000 C CNN
+	3    2550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 554D6FE8
+P 2050 3900
+F 0 "C9" H 2050 4000 40  0000 L CNN
+F 1 "0.1uF" H 2056 3815 40  0000 L CNN
+F 2 "Discret:C1" H 2088 3750 30  0001 C CNN
+F 3 "" H 2050 3900 60  0000 C CNN
+	1    2050 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR039
+U 1 1 554D6FE9
+P 2050 4200
+F 0 "#PWR039" H 2050 4200 30  0001 C CNN
+F 1 "GND" H 2050 4130 30  0001 C CNN
+F 2 "" H 2050 4200 60  0000 C CNN
+F 3 "" H 2050 4200 60  0000 C CNN
+	1    2050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4050 2050 4200
+Wire Wire Line
+	2050 3050 2050 3750
+Wire Wire Line
+	2050 3050 2300 3050
+Connection ~ 2050 3450
+Wire Wire Line
+	2600 3050 3200 3050
+Wire Wire Line
+	3200 3050 3200 3450
+Connection ~ 3200 3450
+$Comp
+L 40106 U3
+U 4 1 554D6FEB
+P 1500 4700
+F 0 "U3" H 1600 4850 50  0000 L CNN
+F 1 "40106" H 1550 4550 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 1500 4700 60  0001 C CNN
+F 3 "" H 1500 4700 60  0000 C CNN
+	4    1500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 554D6FEC
+P 1000 5150
+F 0 "C10" H 1000 5250 40  0000 L CNN
+F 1 "0.1uF" H 1006 5065 40  0000 L CNN
+F 2 "Discret:C1" H 1038 5000 30  0001 C CNN
+F 3 "" H 1000 5150 60  0000 C CNN
+	1    1000 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR040
+U 1 1 554D6FED
+P 1000 5450
+F 0 "#PWR040" H 1000 5450 30  0001 C CNN
+F 1 "GND" H 1000 5380 30  0001 C CNN
+F 2 "" H 1000 5450 60  0000 C CNN
+F 3 "" H 1000 5450 60  0000 C CNN
+	1    1000 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5300 1000 5450
+Wire Wire Line
+	1000 4300 1000 5000
+Wire Wire Line
+	1000 4300 1250 4300
+Connection ~ 1000 4700
+Wire Wire Line
+	1550 4300 2150 4300
+Wire Wire Line
+	2150 4300 2150 4700
+Connection ~ 2150 4700
+Wire Wire Line
+	2000 4700 2650 4700
+$Comp
+L 40106 U3
+U 5 1 554D6FEE
+P 1500 6050
+F 0 "U3" H 1600 6200 50  0000 L CNN
+F 1 "40106" H 1550 5900 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 1500 6050 60  0001 C CNN
+F 3 "" H 1500 6050 60  0000 C CNN
+	5    1500 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 554D6FEF
+P 1000 6500
+F 0 "C11" H 1000 6600 40  0000 L CNN
+F 1 "0.1uF" H 1006 6415 40  0000 L CNN
+F 2 "Discret:C1" H 1038 6350 30  0001 C CNN
+F 3 "" H 1000 6500 60  0000 C CNN
+	1    1000 6500
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR041
+U 1 1 554D6FF0
+P 1000 6800
+F 0 "#PWR041" H 1000 6800 30  0001 C CNN
+F 1 "GND" H 1000 6730 30  0001 C CNN
+F 2 "" H 1000 6800 60  0000 C CNN
+F 3 "" H 1000 6800 60  0000 C CNN
+	1    1000 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 6650 1000 6800
+Wire Wire Line
+	1000 5650 1000 6350
+Wire Wire Line
+	1000 5650 1250 5650
+Connection ~ 1000 6050
+Wire Wire Line
+	1550 5650 2150 5650
+Wire Wire Line
+	2150 5650 2150 6050
+Connection ~ 2150 6050
+Wire Wire Line
+	2000 6050 2650 6050
+$Comp
+L 40106 U3
+U 6 1 554D6FF3
+P 2550 6850
+F 0 "U3" H 2650 7000 50  0000 L CNN
+F 1 "40106" H 2600 6700 50  0000 L CNN
+F 2 "Housings_DIP:DIP-14__300_ELL" H 2550 6850 60  0001 C CNN
+F 3 "" H 2550 6850 60  0000 C CNN
+	6    2550 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 554D6FF4
+P 2050 7300
+F 0 "C12" H 2050 7400 40  0000 L CNN
+F 1 "0.1uF" H 2056 7215 40  0000 L CNN
+F 2 "Discret:C1" H 2088 7150 30  0001 C CNN
+F 3 "" H 2050 7300 60  0000 C CNN
+	1    2050 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR042
+U 1 1 554D6FF5
+P 2050 7600
+F 0 "#PWR042" H 2050 7600 30  0001 C CNN
+F 1 "GND" H 2050 7530 30  0001 C CNN
+F 2 "" H 2050 7600 60  0000 C CNN
+F 3 "" H 2050 7600 60  0000 C CNN
+	1    2050 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 7450 2050 7600
+Wire Wire Line
+	2050 6450 2050 7150
+Wire Wire Line
+	2050 6450 2350 6450
+Connection ~ 2050 6850
+Wire Wire Line
+	2650 6450 3200 6450
+Wire Wire Line
+	3200 6450 3200 6850
+Connection ~ 3200 6850
+Wire Wire Line
+	3050 6850 3850 6850
+$Comp
+L R R19
+U 1 1 554D7005
+P 2500 6450
+F 0 "R19" V 2580 6450 50  0000 C CNN
+F 1 "39k" V 2500 6450 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2430 6450 30  0001 C CNN
+F 3 "" H 2500 6450 30  0000 C CNN
+	1    2500 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 554D7006
+P 1400 4300
+F 0 "R17" V 1480 4300 50  0000 C CNN
+F 1 "47k" V 1400 4300 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1330 4300 30  0001 C CNN
+F 3 "" H 1400 4300 30  0000 C CNN
+	1    1400 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R14
+U 1 1 554D7007
+P 1400 900
+F 0 "R14" V 1480 900 50  0000 C CNN
+F 1 "10k" V 1400 900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1330 900 30  0001 C CNN
+F 3 "" H 1400 900 30  0000 C CNN
+	1    1400 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L R R16
+U 1 1 554D7008
+P 2450 3050
+F 0 "R16" V 2530 3050 50  0000 C CNN
+F 1 "22k" V 2450 3050 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 2380 3050 30  0001 C CNN
+F 3 "" H 2450 3050 30  0000 C CNN
+	1    2450 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R15
+U 1 1 554D7187
+P 1400 2250
+F 0 "R15" V 1480 2250 50  0000 C CNN
+F 1 "33k" V 1400 2250 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1330 2250 30  0001 C CNN
+F 3 "" H 1400 2250 30  0000 C CNN
+	1    1400 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R18
+U 1 1 554D780B
+P 1400 5650
+F 0 "R18" V 1480 5650 50  0000 C CNN
+F 1 "56k" V 1400 5650 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 1330 5650 30  0001 C CNN
+F 3 "" H 1400 5650 30  0000 C CNN
+	1    1400 5650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 3450 3500 3450
+Text HLabel 2650 1300 2    60   Output ~ 0
+out_A
+Text HLabel 2650 2650 2    60   Output ~ 0
+out_B
+Text HLabel 3500 3450 2    60   Output ~ 0
+out_C
+Text HLabel 2650 4700 2    60   Output ~ 0
+out_D
+Text HLabel 2650 6050 2    60   Output ~ 0
+out_E
+Text HLabel 3850 6850 2    60   Output ~ 0
+out_F
+$EndSCHEMATC

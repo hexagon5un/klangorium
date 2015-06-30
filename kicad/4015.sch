@@ -1,0 +1,358 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:elliot
+LIBS:logic_noise_playground-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4015 U6
+U 1 1 55468EB4
+P 5550 2500
+F 0 "U6" H 5300 2850 60  0000 C CNN
+F 1 "4015" H 5300 2250 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16__300_ELL" H 5450 2400 60  0001 C CNN
+F 3 "" H 5450 2400 60  0000 C CNN
+	1    5550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4015 U6
+U 2 1 55468F12
+P 5600 3500
+F 0 "U6" H 5350 3850 60  0000 C CNN
+F 1 "4015" H 5350 3250 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16__300_ELL" H 5500 3400 60  0001 C CNN
+F 3 "" H 5500 3400 60  0000 C CNN
+	2    5600 3500
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 2350 0    60   Input ~ 0
+DataA
+Text HLabel 4700 2450 0    60   Input ~ 0
+ClockA
+Text HLabel 4800 2550 0    60   Input ~ 0
+ResetA
+$Comp
+L R R6
+U 1 1 55468FCB
+P 4900 2750
+F 0 "R6" V 4980 2750 50  0000 C CNN
+F 1 "100k" V 4900 2750 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4830 2750 30  0001 C CNN
+F 3 "" H 4900 2750 30  0000 C CNN
+	1    4900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 554690AC
+P 4900 2950
+F 0 "#PWR012" H 4900 2700 50  0001 C CNN
+F 1 "GND" H 4900 2800 50  0000 C CNN
+F 2 "" H 4900 2950 60  0000 C CNN
+F 3 "" H 4900 2950 60  0000 C CNN
+	1    4900 2950
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 3350 0    60   Input ~ 0
+DataB
+Text HLabel 4700 3450 0    60   Input ~ 0
+ClockB
+Text HLabel 4800 3550 0    60   Input ~ 0
+ResetB
+$Comp
+L R R7
+U 1 1 55469450
+P 4950 3850
+F 0 "R7" V 5030 3850 50  0000 C CNN
+F 1 "100k" V 4950 3850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4880 3850 30  0001 C CNN
+F 3 "" H 4950 3850 30  0000 C CNN
+	1    4950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 554694A0
+P 4950 4050
+F 0 "#PWR013" H 4950 3800 50  0001 C CNN
+F 1 "GND" H 4950 3900 50  0000 C CNN
+F 2 "" H 4950 4050 60  0000 C CNN
+F 3 "" H 4950 4050 60  0000 C CNN
+	1    4950 4050
+	1    0    0    -1  
+$EndComp
+Text HLabel 6350 2300 2    60   Output ~ 0
+1A
+Text HLabel 6350 2400 2    60   Output ~ 0
+2A
+Text HLabel 6350 2500 2    60   Output ~ 0
+3A
+Text HLabel 6350 2600 2    60   Output ~ 0
+4A
+Text HLabel 6350 3300 2    60   Output ~ 0
+1B
+Text HLabel 6350 3400 2    60   Output ~ 0
+2B
+Wire Wire Line
+	4800 2350 5000 2350
+Wire Wire Line
+	4700 2450 5000 2450
+Wire Wire Line
+	4800 2550 5000 2550
+Wire Wire Line
+	4800 3350 5050 3350
+Wire Wire Line
+	4700 3450 5050 3450
+Wire Wire Line
+	4800 3550 5050 3550
+Wire Wire Line
+	4950 4050 4950 4000
+Wire Wire Line
+	4950 3700 4950 3550
+Connection ~ 4950 3550
+Wire Wire Line
+	4900 2600 4900 2550
+Connection ~ 4900 2550
+Wire Wire Line
+	4900 2950 4900 2900
+Wire Wire Line
+	6100 2300 6350 2300
+Wire Wire Line
+	6350 2400 6100 2400
+Wire Wire Line
+	6100 2500 6350 2500
+Wire Wire Line
+	6100 2600 6350 2600
+Wire Wire Line
+	6150 3300 6350 3300
+Wire Wire Line
+	6350 3400 6150 3400
+Text HLabel 6350 3500 2    60   Output ~ 0
+3B
+Text HLabel 6350 3600 2    60   Output ~ 0
+4B
+Wire Wire Line
+	6150 3600 6350 3600
+Wire Wire Line
+	6150 3500 6350 3500
+Wire Wire Line
+	4900 2350 4900 2250
+Wire Wire Line
+	4900 2250 4300 2250
+Connection ~ 4900 2350
+Wire Wire Line
+	4300 4300 5700 4300
+Connection ~ 6250 3600
+Wire Wire Line
+	5000 2950 5000 3350
+Connection ~ 5000 3350
+$Comp
+L R R13
+U 1 1 55573849
+P 4300 2850
+F 0 "R13" V 4380 2850 50  0000 C CNN
+F 1 "100k" V 4300 2850 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4230 2850 30  0001 C CNN
+F 3 "" H 4300 2850 30  0000 C CNN
+	1    4300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 55573883
+P 4000 2350
+F 0 "SW1" H 4150 2460 50  0000 C CNN
+F 1 "Set" H 4000 2270 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH_SMALL" H 4000 2350 60  0001 C CNN
+F 3 "" H 4000 2350 60  0000 C CNN
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW2
+U 1 1 55573998
+P 4000 2600
+F 0 "SW2" H 4150 2710 50  0000 C CNN
+F 1 "Clear" H 4000 2520 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH_SMALL" H 4000 2600 60  0001 C CNN
+F 3 "" H 4000 2600 60  0000 C CNN
+	1    4000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2250 4300 2700
+Connection ~ 4300 2350
+Connection ~ 4300 2600
+Wire Wire Line
+	4300 3000 4300 4300
+$Comp
+L VCC #PWR014
+U 1 1 55573AC9
+P 3700 1900
+F 0 "#PWR014" H 3700 1750 50  0001 C CNN
+F 1 "VCC" H 3700 2050 50  0000 C CNN
+F 2 "" H 3700 1900 60  0000 C CNN
+F 3 "" H 3700 1900 60  0000 C CNN
+	1    3700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR015
+U 1 1 55573AEF
+P 3700 2750
+F 0 "#PWR015" H 3700 2500 50  0001 C CNN
+F 1 "GND" H 3700 2600 50  0000 C CNN
+F 2 "" H 3700 2750 60  0000 C CNN
+F 3 "" H 3700 2750 60  0000 C CNN
+	1    3700 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2750 3700 2600
+$Comp
+L R R22
+U 1 1 55574294
+P 3700 2100
+F 0 "R22" V 3780 2100 50  0000 C CNN
+F 1 "10k" V 3700 2100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 3630 2100 30  0001 C CNN
+F 3 "" H 3700 2100 30  0000 C CNN
+	1    3700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1900 3700 1950
+Wire Wire Line
+	3700 2250 3700 2350
+$Comp
+L R R26
+U 1 1 555683E4
+P 4750 3000
+F 0 "R26" V 4830 3000 50  0000 C CNN
+F 1 "100k" V 4750 3000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4680 3000 30  0001 C CNN
+F 3 "" H 4750 3000 30  0000 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2850 4750 2450
+Connection ~ 4750 2450
+Wire Wire Line
+	4750 3450 4750 3150
+Connection ~ 4750 3450
+$Comp
+L JUMPER3 JP2
+U 1 1 5556858F
+P 5800 4300
+F 0 "JP2" H 5850 4200 50  0000 L CNN
+F 1 "JUMPER3" H 5800 4400 50  0000 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 5800 4300 60  0001 C CNN
+F 3 "" H 5800 4300 60  0000 C CNN
+	1    5800 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 55568766
+P 5800 4600
+F 0 "#PWR016" H 5800 4350 50  0001 C CNN
+F 1 "GND" H 5800 4450 50  0000 C CNN
+F 2 "" H 5800 4600 60  0000 C CNN
+F 3 "" H 5800 4600 60  0000 C CNN
+	1    5800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4550 5800 4600
+Wire Wire Line
+	5800 4050 6250 4050
+Wire Wire Line
+	6250 4050 6250 3600
+$Comp
+L JUMPER3 JP1
+U 1 1 555688FE
+P 6750 2950
+F 0 "JP1" H 6800 2850 50  0000 L CNN
+F 1 "JUMPER3" H 6750 3050 50  0000 C BNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03" H 6750 2950 60  0001 C CNN
+F 3 "" H 6750 2950 60  0000 C CNN
+	1    6750 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6750 2700 6200 2700
+Wire Wire Line
+	6200 2700 6200 2600
+Connection ~ 6200 2600
+$Comp
+L GND #PWR017
+U 1 1 555689F1
+P 6750 3250
+F 0 "#PWR017" H 6750 3000 50  0001 C CNN
+F 1 "GND" H 6750 3100 50  0000 C CNN
+F 2 "" H 6750 3250 60  0000 C CNN
+F 3 "" H 6750 3250 60  0000 C CNN
+	1    6750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3250 6750 3200
+$Comp
+L R R25
+U 1 1 55568AA4
+P 5900 2950
+F 0 "R25" V 5980 2950 50  0000 C CNN
+F 1 "100k" V 5900 2950 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5830 2950 30  0001 C CNN
+F 3 "" H 5900 2950 30  0000 C CNN
+	1    5900 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2950 5750 2950
+Wire Wire Line
+	6050 2950 6650 2950
+$EndSCHEMATC
